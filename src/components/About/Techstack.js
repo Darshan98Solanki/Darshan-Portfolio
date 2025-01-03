@@ -1,6 +1,5 @@
 import React from "react";
 import { Col, Row } from "react-bootstrap";
-import { CgCPlusPlus } from "react-icons/cg";
 import {
   DiJavascript1,
   DiReact,
@@ -11,58 +10,65 @@ import {
   DiJava,
 } from "react-icons/di";
 import {
-  SiRedis,
-  SiFirebase,
-  SiNextdotjs,
-  SiSolidity,
   SiPostgresql,
+  SiTypescript,
+  SiExpress,
+  SiTailwindcss,
 } from "react-icons/si";
-import { TbBrandGolang } from "react-icons/tb";
+import { 
+  FaBootstrap,
+  FaNpm
+ } from "react-icons/fa";
+import { VscGithub } from "react-icons/vsc";
+import { IoPrism } from "react-icons/io5";
 
 function Techstack() {
   return (
     <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
       <Col xs={4} md={2} className="tech-icons">
-        <CgCPlusPlus />
+        <SiTypescript />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <DiJavascript1 />
+      </Col> 
+      <Col xs={4} md={2} className="tech-icons">
+        <DiReact />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <TbBrandGolang />
+        <SiExpress />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <DiNodejs />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <DiReact />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiSolidity />
+        <FaNpm />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <DiMongodb />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiNextdotjs />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <DiGit />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiFirebase />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiRedis />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
         <SiPostgresql />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <IoPrism/>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <DiPython />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <DiJava />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <DiGit />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <VscGithub/>
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <FaBootstrap />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiTailwindcss />
       </Col>
     </Row>
   );

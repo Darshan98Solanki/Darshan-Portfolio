@@ -10,19 +10,13 @@ function AboutCard() {
             Hi Everyone, I am <span className="purple">Darshan Solanki </span>
             from <span className="purple"> Gujarat, India.</span>
             <br />
-            I am currently employed as a software developer at TCS.
+            I am currently working as a software developer.
             <br />
-            I have completed Integrated MSc (IMSc) in Maths and Computing at BIT
-            Mesra.
+            I have completed B.E. in Computer Engineering.
             <br />
+            Worked as freelancer and have completed work from <b>Canada & Indian</b>.
             <br />
-            Apart from coding, some other activities that I love to do!
           </p>
-
-          <p style={{ color: "rgb(155 126 172)" }}>
-            "Strive to build things that make a difference!"{" "}
-          </p>
-          <footer className="blockquote-footer">Soumyajit</footer>
         </blockquote>
       </Card.Body>
     </Card>
