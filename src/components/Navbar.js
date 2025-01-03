@@ -34,6 +34,7 @@ function NavBar() {
     >
       <Container>
         <Navbar.Toggle
+          className="ms-auto"
           aria-controls="responsive-navbar-nav"
           onClick={() => {
             updateExpanded(expand ? false : "expanded");
