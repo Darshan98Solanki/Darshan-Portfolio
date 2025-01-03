@@ -14,7 +14,7 @@ function AboutCard() {
             <br />
             I have completed B.E. in Computer Engineering.
             <br />
-            Worked as freelancer and have completed work from <b>Canada & Indian</b>.
+            Worked as freelancer and have completed work from <b>Canada & India</b>.
             <br />
           </p>
         </blockquote>
