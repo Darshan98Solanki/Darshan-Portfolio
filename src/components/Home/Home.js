@@ -5,6 +5,7 @@ import Particle from "../Particle";
 import Type from "./Type";
 import { FaLinkedinIn } from "react-icons/fa";
 import { AiFillGithub, AiFillInstagram, AiOutlineTwitter } from "react-icons/ai";
+import Button from "react-bootstrap/Button";
 
 function Home() {
   return (
@@ -89,6 +90,7 @@ function Home() {
             </ul>
           </Col>
         </Row>
+        <Button className="text-center my-3" href="/project" style={{ maxWidth: "250px" }}>Explore Projects</Button>
       </Container>
     </section>
   );
