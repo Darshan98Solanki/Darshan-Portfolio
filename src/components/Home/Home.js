@@ -6,8 +6,11 @@ import Type from "./Type";
 import { FaLinkedinIn } from "react-icons/fa";
 import { AiFillGithub, AiFillInstagram, AiOutlineTwitter } from "react-icons/ai";
 import Button from "react-bootstrap/Button";
-
+import { useNavigate } from "react-router-dom";
 function Home() {
+
+  const navigator = useNavigate()
+
   return (
     <section>
       <Container fluid className="home-section" id="home">
@@ -90,7 +93,11 @@ function Home() {
             </ul>
           </Col>
         </Row>
-        <Button className="text-center my-3" href="/project" style={{ maxWidth: "250px" }}>Explore Projects</Button>
+        <Button className="text-center my-3" style={{ maxWidth: "250px" }}
+          onClick={()=>{
+            navigator("/project")
+          }}
+        >Explore Projects</Button>
       </Container>
     </section>
   );
