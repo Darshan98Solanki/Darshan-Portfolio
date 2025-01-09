@@ -47,7 +47,7 @@ function Projects() {
             <ProjectCard
               imgPath={shortURI}
               isBlog={false}
-              title="Editor.io"
+              title="Short-URI"
               description="This project is a full-stack application designed to shorten URLs, with a backend built using Node.js and a frontend developed using modern web technologies. The backend handles the logic for URL shortening, while the frontend offers a clean, user-friendly interface."
               ghLink="https://github.com/Darshan98Solanki/Short-URI"
               demoLink="https://short-uri-q5yh.vercel.app"              
