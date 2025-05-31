@@ -4,7 +4,7 @@ function Footer() {
   return (
     <Container fluid className="footer">
       <Row>
-        <Col className="footer-copywright text-center">
+        <Col className="footer-copywright p-3 text-center">
           <h3>Thank You ❕</h3>
         </Col>
       </Row>

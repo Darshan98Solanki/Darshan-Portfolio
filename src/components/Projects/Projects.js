@@ -8,6 +8,7 @@ import shortURI from "../../Assets/Projects/short-uri.png";
 import medium from "../../Assets/Projects/medium.png";
 import quiz from "../../Assets/Projects/quiz.png";
 import paydm from "../../Assets/Projects/paydm.png";
+import chatDash from "../../Assets/Projects/chat-dash.png";
 
 function Projects() {
   return (
@@ -40,6 +41,16 @@ function Projects() {
               description="This project demonstrates a PayTM clone where users can sign up and register on our platform to receive some signup paper money. They can transfer the money to their friends who are already on the platform."
               ghLink="https://github.com/Darshan98Solanki/paytm"
               demoLink="https://Paytm-axue.vercel.app/"
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={chatDash}
+              isBlog={false}
+              title="Chat-Dash"
+              description="This project is a full-stack application designed for real-time chat, with a backend built using Node.js and a frontend developed using modern web technologies. The backend handles users chat rooms and message handling, while the frontend offers a clean, user-friendly interface."
+              ghLink="https://github.com/Darshan98Solanki/chat-dash"
             />
           </Col>
 

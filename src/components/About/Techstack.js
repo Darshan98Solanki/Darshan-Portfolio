@@ -1,4 +1,3 @@
-import React from "react";
 import { Col, Row } from "react-bootstrap";
 import {
   DiJavascript1,
@@ -6,31 +5,31 @@ import {
   DiNodejs,
   DiMongodb,
   DiPython,
-  DiGit,
   DiJava,
+  DiPhp,
+  DiMysql 
 } from "react-icons/di";
 import {
   SiPostgresql,
   SiTypescript,
   SiExpress,
   SiTailwindcss,
+  SiNextdotjs,
+  SiNestjs,
 } from "react-icons/si";
-import { 
+import {
   FaBootstrap,
-  FaNpm
- } from "react-icons/fa";
-import { VscGithub } from "react-icons/vsc";
-import { IoPrism } from "react-icons/io5";
+} from "react-icons/fa";
 
 function Techstack() {
   return (
     <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
       <Col xs={4} md={2} className="tech-icons">
-        <SiTypescript />
+        <SiNextdotjs />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <DiJavascript1 />
-      </Col> 
+        <SiNestjs />
+      </Col>
       <Col xs={4} md={2} className="tech-icons">
         <DiReact />
       </Col>
@@ -41,16 +40,10 @@ function Techstack() {
         <DiNodejs />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <FaNpm />
+        <SiTypescript />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <DiMongodb />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiPostgresql />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <IoPrism/>
+        <DiJavascript1 />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <DiPython />
@@ -59,10 +52,16 @@ function Techstack() {
         <DiJava />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <DiGit />
+        <DiPhp />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <VscGithub/>
+        <DiMongodb />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiPostgresql />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <DiMysql />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <FaBootstrap />

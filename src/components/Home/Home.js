@@ -1,12 +1,12 @@
-import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import homeLogo from "../../Assets/home-main.svg";
 import Particle from "../Particle";
 import Type from "./Type";
 import { FaLinkedinIn } from "react-icons/fa";
-import { AiFillGithub, AiFillInstagram, AiOutlineTwitter } from "react-icons/ai";
+import { AiFillGithub, AiOutlineTwitter } from "react-icons/ai";
 import Button from "react-bootstrap/Button";
 import { useNavigate } from "react-router-dom";
+import { SiLeetcode } from "react-icons/si";
 function Home() {
 
   const navigator = useNavigate()
@@ -45,59 +45,59 @@ function Home() {
             </Col>
           </Row>
         </Container>
-      </Container>
-      <Container fluid className="home-about-section" id="about">
-        <Row>
-          <Col md={12} className="home-about-social">
-            <ul className="home-about-social-links">
-              <li className="social-icons">
-                <a
-                  href="https://github.com/Darshan98Solanki/"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="icon-colour  home-social-icons"
-                >
-                  <AiFillGithub />
-                </a>
-              </li>
-              <li className="social-icons">
-                <a
-                  href="https://x.com/DarshanS0lanki"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="icon-colour  home-social-icons"
-                >
-                  <AiOutlineTwitter />
-                </a>
-              </li>
-              <li className="social-icons">
-                <a
-                  href="https://linkedin.com/in/solanki-darshan/"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="icon-colour  home-social-icons"
-                >
-                  <FaLinkedinIn />
-                </a>
-              </li>
-              <li className="social-icons">
-                <a
-                  href="https://www.instagram.com/darshan98_solanki/"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="icon-colour home-social-icons"
-                >
-                  <AiFillInstagram />
-                </a>
-              </li>
-            </ul>
-          </Col>
-        </Row>
-        <Button className="text-center my-3" style={{ maxWidth: "250px" }}
-          onClick={()=>{
-            navigator("/project")
-          }}
-        >Explore Projects</Button>
+        <Container fluid className="home-about-section" id="about">
+          <Row>
+            <Col md={12} className="home-about-social">
+              <ul className="home-about-social-links">
+                <li className="social-icons">
+                  <a
+                    href="https://github.com/Darshan98Solanki/"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="icon-colour  home-social-icons"
+                  >
+                    <AiFillGithub />
+                  </a>
+                </li>
+                <li className="social-icons">
+                  <a
+                    href="https://x.com/DarshanS0lanki"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="icon-colour  home-social-icons"
+                  >
+                    <AiOutlineTwitter />
+                  </a>
+                </li>
+                <li className="social-icons">
+                  <a
+                    href="https://linkedin.com/in/solanki-darshan/"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="icon-colour  home-social-icons"
+                  >
+                    <FaLinkedinIn />
+                  </a>
+                </li>
+                <li className="social-icons">
+                  <a
+                    href="https://leetcode.com/u/darshansolanki/"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="icon-colour  home-social-icons"
+                  >
+                    <SiLeetcode />
+                  </a>
+                </li>
+              </ul>
+            </Col>
+          </Row>
+          <Button className="text-center my-3" style={{ maxWidth: "250px" }}
+            onClick={() => {
+              navigator("/project")
+            }}
+          >Explore Projects</Button>
+        </Container>
       </Container>
     </section>
   );
