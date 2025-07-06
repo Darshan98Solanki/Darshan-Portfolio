@@ -7,6 +7,7 @@ import { timelineData } from './List';
 export default function TimeLine() {
 
     const [visibleItems, setVisibleItems] = useState([]);
+    // eslint-disable-next-line no-unused-vars
     const [expandedItems, setExpandedItems] = useState([]);
 
     useEffect(() => {
@@ -47,6 +48,7 @@ export default function TimeLine() {
                         item={item}
                         index={index}
                         isVisible={visibleItems.includes(index)}
+                        isExpanded={expandedItems.includes(index)}
                         onToggle={handleItemToggle}
                     />
                 ))}
