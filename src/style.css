@@ -201,6 +201,11 @@ button:focus {
   transition: all 0.3s ease-out 0s;
 }
 
+.navbar-nav .nav-item .active::after {
+  width: 100%;
+  background: #9d50f6;
+}
+
 .navbar-nav .nav-item a:hover::after {
   width: 100%;
 }

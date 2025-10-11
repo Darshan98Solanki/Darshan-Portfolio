@@ -7,7 +7,7 @@ import {
   DiPython,
   DiJava,
   DiPhp,
-  DiMysql 
+  DiMysql
 } from "react-icons/di";
 import {
   SiPostgresql,
@@ -16,6 +16,7 @@ import {
   SiTailwindcss,
   SiNextdotjs,
   SiNestjs,
+  SiSocketdotio
 } from "react-icons/si";
 import {
   FaBootstrap,
@@ -68,6 +69,9 @@ function Techstack() {
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <SiTailwindcss />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiSocketdotio />
       </Col>
     </Row>
   );

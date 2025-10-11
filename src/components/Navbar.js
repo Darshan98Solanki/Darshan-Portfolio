@@ -15,6 +15,7 @@ import { CgFileDocument } from "react-icons/cg";
 function NavBar() {
   const [expand, updateExpanded] = useState(false);
   const [navColour, updateNavbar] = useState(false);
+  const [current, setCurrent] = useState("home");
 
   function scrollHandler() {
     if (window.scrollY >= 20) {
@@ -48,7 +49,15 @@ function NavBar() {
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="m-auto" defaultActiveKey="#home">
             <Nav.Item>
-              <Nav.Link as={Link} to="/" onClick={() => updateExpanded(false)}>
+              <Nav.Link
+                as={Link}
+                to="/"
+                className={current === "home" ? "active" : ""}
+                onClick={() => {
+                  updateExpanded(false);
+                  setCurrent("home");
+                }}
+              >
                 <AiOutlineHome style={{ marginBottom: "2px" }} /> Home
               </Nav.Link>
             </Nav.Item>
@@ -56,7 +65,11 @@ function NavBar() {
               <Nav.Link
                 as={Link}
                 to="/project"
-                onClick={() => updateExpanded(false)}
+                className={current === "project" ? "active" : ""}
+                onClick={() => {
+                  updateExpanded(false);
+                  setCurrent("project");
+                }}
               >
                 <AiOutlineFundProjectionScreen
                   style={{ marginBottom: "2px" }}
@@ -68,7 +81,11 @@ function NavBar() {
               <Nav.Link
                 as={Link}
                 to="/about"
-                onClick={() => updateExpanded(false)}
+                className={current === "about" ? "active" : ""}
+                onClick={() => {
+                  updateExpanded(false);
+                  setCurrent("about");
+                }}
               >
                 <AiOutlineUser style={{ marginBottom: "2px" }} /> About
               </Nav.Link>
@@ -77,7 +94,11 @@ function NavBar() {
               <Nav.Link
                 as={Link}
                 to="/experience"
-                onClick={() => updateExpanded(false)}
+                className={current === "experience" ? "active" : ""}
+                onClick={() => {
+                  updateExpanded(false);
+                  setCurrent("experience");
+                }}
               >
                 <AiOutlineLaptop style={{ marginBottom: "2px" }} /> Experience
               </Nav.Link>
@@ -86,7 +107,11 @@ function NavBar() {
               <Nav.Link
                 as={Link}
                 to="/resume"
-                onClick={() => updateExpanded(false)}
+                className={current === "resume" ? "active" : ""}
+                onClick={() => {
+                  updateExpanded(false);
+                  setCurrent("resume");
+                }}
               >
                 <CgFileDocument style={{ marginBottom: "2px" }} /> Resume
               </Nav.Link>
