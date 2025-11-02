@@ -36,7 +36,7 @@ function ResumeNew() {
         <Row style={{ justifyContent: "center", position: "relative" }}>
           <Button
             variant="primary"
-            href={"https://drive.google.com/file/d/1NZHJUCOM61qJJbr8kQhB00JGxonTOzRg/view?usp=sharing"}
+            href={"https://drive.google.com/file/d/1oIrXFsn7l2TQC5nnwu3UvIHQ17ZFy2FI/view?usp=sharing"}
             target="_blank"
             style={{ maxWidth: "250px" }}
             aria-label="Download Resume"

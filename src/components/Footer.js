@@ -43,7 +43,7 @@ function Footer() {
             </li>
             <li className="social-icons mx-2">
               <a
-                href="https://leetcode.com/u/darshansolanki/"
+                href="https://leetcode.com/u/darshan98solanki/"
                 target="_blank"
                 rel="noreferrer"
                 className="icon-colour home-social-icons"
